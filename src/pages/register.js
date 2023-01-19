@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const supabase = createClient(
     "https://mgnwvyvyohgwnmxoonpc.supabase.co",
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1nbnd2eXZ5b2hnd25teG9vbnBjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzQxMDA4MDAsImV4cCI6MTk4OTY3NjgwMH0.kUUrzWtcxsg1TkV4fYKYrbiXZvaTXYQU7spg6dAwuL8"
-
+)
     const Register = async (event) => {
         event.preventDefault();
         const {data, error} = await supabase.auth.signUp({
