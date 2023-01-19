@@ -3,17 +3,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const supabase = createClient(
-    "https://iizghvrvshamveeejuqb.supabase.co",
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlpemdodnJ2c2hhbXZlZWVqdXFiIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzM3MTI4MDYsImV4cCI6MTk4OTI4ODgwNn0.LNm2UxFwB6t6r3B0FBcAYRyscJpTDe2iV9ilfMc39aU"
-)
-
-function Register() {
-
-    const navigate = useNavigate();
-
-    const [emailR, setEmailR] = useState(''); 
-    const [passwordR, setPasswordR] = useState(''); 
-    const [username, setUsername] = useState('');
+    "https://mgnwvyvyohgwnmxoonpc.supabase.co",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1nbnd2eXZ5b2hnd25teG9vbnBjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzQxMDA4MDAsImV4cCI6MTk4OTY3NjgwMH0.kUUrzWtcxsg1TkV4fYKYrbiXZvaTXYQU7spg6dAwuL8"
 
     const Register = async (event) => {
         event.preventDefault();
